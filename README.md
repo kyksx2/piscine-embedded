@@ -13,7 +13,9 @@ et des tests en conditions réelles sur microcontrôleur.
 Matériel utilisé:
 
 Carte : ATmega328P (type Arduino UNO)
+
 Programmation : AVR-GCC / avrdude
+
 Terminal Série : minicom / screen / cutecom
 
 --------------------------------------------------------------------------------------

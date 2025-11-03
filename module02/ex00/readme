@@ -1,0 +1,31 @@
+| *Registre* | *Accès*            | *Bits importants*                                    | *Rôle principal*                           |
+| -----------| ------------------ | ---------------------------------------------------- | ------------------------------------------ |
+| **UCSR0A** |*Lecture / écriture*| `RXC0`  *Réception terminée*                         |                                            |
+|            |                    | `TXC0`  *Transmission terminée*                      |                                            |
+|            |                    | `UDRE0` *Buffer émission vide*                       | *Indique l etat du peripherique*           |
+|            |                    | `FE0`   *Erreur de trame*                            | *et active le mode double vitesse*         |
+|            |                    | `DOR0`  *Débordement*                                |                                            |
+|            |                    | `UPE0`  *Erreur de parité*                           |                                            |
+|            |                    | `U2X0`  *Double vitesse*                             |                                            |
+|            |                    | `MPCM0` *Multi-processeur*                           |                                            |
+| ---------- | ------------------ | ---------------------------------------------------- | ------------------------------------------ |
+| **UCSR0B** |*Lecture / écriture*| `RXCIE0` *Interruption réception*                    |                                            |
+|            |                    | `TXCIE0` *Interruption transmission*                 |                                            |
+|            |                    | `UDRIE0` *Interruption buffer vide*                  | *Active/désactive transmission,*           |
+|            |                    | `RXEN0`  *Active la réception*                       | *reception, interruptions*                 |
+|            |                    | `TXEN0`  *Active la transmission*                    |                                            |
+|            |                    | `UCSZ02` *Taille des données (bit 2)*                |                                            |
+|            |                    | `RXB80` / `TXB80`  *9ᵉ bit (mode 9 bits)*            |                                            |
+| ---------- | ------------------ | ---------------------------------------------------- | ------------------------------------------ |
+| **UCSR0C** |*Lecture / écriture*| `UMSEL01:0`*Mode (Asynchrone, Synchrone, SPI maître)*| *Configure le format du trame*             |
+|            |                    | `UPM01:0`  *Parité (none/even/odd)*                  | *et le mode d opération*                   |
+|            |                    | `USBS0`    *Stop bits (1 ou 2)*                      |                                            |
+|            |                    | `UCSZ01:0` *Taille des données (bits 0-1)*           |                                            |
+|            |                    | `UCPOL0`   *Polarité horloge (mode synchrone)*       |                                            |
+| ---------- | ------------------ | ---------------------------------------------------- | ------------------------------------------ |
+| **UBRR0H** |*Lecture / écriture*| *Bits 11-8 du diviseur baud*                         | *Partie haute de la valeur du baud rate*   |
+| ---------- | ------------------ | ---------------------------------------------------- | ------------------------------------------ |
+| **UBRR0L** |*Lecture / écriture*| *Bits 7-0 du diviseur baud*                          | *Partie basse de la valeur du baud rate*   |
+| ---------- | ------------------ | ---------------------------------------------------- | ------------------------------------------ |
+| **UDR0**   |*Lecture / écriture*| *8 bits de données*                                  |*Écriture = émission  / lecture = réception*|
+|-------------------------------------------------------------------------------------------------------------------------------------|

@@ -23,7 +23,7 @@ module 0:
 * sujet principal: setup µC
 * conecpt: registre DDRx / PORTx, PINx
 
-module 01:t
+module 01:
 * sujet principal: timers / PWM
 * concept: TCCRnA / TCCRnB / OCRnX
 
